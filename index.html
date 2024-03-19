@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Smart PC Innovation</title>
+    <link rel="icon" href="./imagenes/favicon.png">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="./imagenes/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button">Solicitar presupuesto</button>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner" class="banner-carousel">
+        <div class="slick-carousel">
+            <div><img src="./imagenes/principal.jpg" alt="Principal"></div>
+            <div><img src="./imagenes/promo.jpg" alt="Promoción"></div>
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-flexbox">
+            <div class="servicio-item">
+                <img src="./imagenes/web2.png" alt="Desarrollo web">
+                <h3>Desarrollo Web</h3>
+                <p>Creación de sitios web a medida según tus necesidades.</p>
+                <button class="cta-button">Solicitar presupuesto</button>
+            </div>
+            <div class="servicio-item">
+                <img src="./imagenes/movil.jpg" alt="Aplicaciones Móviles">
+                <h3>Aplicaciones Móviles</h3>
+                <p>Desarrollo de aplicaciones móviles para iOS y Android.</p>
+                <button class="cta-button">Solicitar presupuesto</button>
+            </div>
+            <div class="servicio-item">
+                <img src="./imagenes/soporte.png" alt="Servicio 3">
+                <h3>Soporte Técnico</h3>
+                <p>Asistencia técnica especializada para mantener tus sistemas funcionando sin problemas.</p>
+                <button class="cta-button">Solicitar presupuesto</button>
+            </div>
+            <!-- Agrega más servicios según sea necesario -->
+        </div>
+    </section>
+
+    <section id="portafolio" class="portafolio-flexbox">
+        <h2 class="portafolio-title">Nuestro Portafolio</h2>
+        <div class="proyecto-item">
+            <img src="./imagenes/proyecto1.jpg" alt="Proyecto 1">
+            <h3>Antoine Torres Fotografia</h3>
+            <p>Sitio web de fotografia, a continuacion puede visitarlo.</p>
+            <a href="#" class="ver-mas-button">Ver más</a>
+        </div>
+        <div class="proyecto-item">
+            <img src="proyecto2.jpg" alt="Proyecto 2">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto 2.</p>
+            <a href="#" class="ver-mas-button">Ver más</a>
+        </div>
+        <div class="proyecto-item">
+            <img src="proyecto3.jpg" alt="Proyecto 3">
+            <h3>Proyecto 3</h3>
+            <p>Descripción breve del proyecto 3.</p>
+            <a href="#" class="ver-mas-button">Ver más</a>
+        </div>
+        <!-- Agrega más proyectos según sea necesario -->
+    </section>
+    
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="testimonios-carousel">
+        <h2>Testimonios</h2>
+        <div class="slick-carousel">
+            <div class="testimonio-item">
+                <img src="./imagenes/antuan.jpg" alt="Antoine">
+                <h3>Antoine Torres</h3>
+                <p>Es increible trabajar con profesionales del area como lo son Smart, los recomiendo</p>
+            </div>
+            <div class="testimonio-item">
+                <img src="cliente2.jpg" alt="Cliente 2">
+                <h3>Cliente 2</h3>
+                <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            </div>
+            <!-- Agrega más testimonios según sea necesario -->
+        </div>
+    </section>
+    
+    
+    
+    
+    
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto-seccion">
+        <div class="container">
+            <div class="contacto-contenedor">
+                <div class="contacto-imagen">
+                    <img src="./imagenes/contacto.png" alt="Imagen de contacto">
+                </div>
+                <div class="contacto-formulario">
+                    <h2 class="c">Contacto</h2>
+                    <form id="contacto-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="interes">Área de interés:</label>
+                            <select id="interes" name="interes">
+                                <option value="Desarrollo Web">Desarrollo Web</option>
+                                <option value="Aplicaciones Móviles">Aplicaciones Móviles</option>
+                                <option value="Soporte Técnico">Soporte Técnico</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="archivo">Adjuntar archivo:</label>
+                            <input type="file" id="archivo" name="archivo">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="terminos" required>
+                                Acepto los términos y condiciones.
+                            </label>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Pie de página -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <!-- Agrega más iconos de redes sociales según sea necesario -->
+        </div>
+    </footer>
+
+    <!-- Scripts opcionales -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/testimonios.js"></script>
+
+    
+</body>
+</html>
