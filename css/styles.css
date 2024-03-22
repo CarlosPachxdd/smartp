@@ -21,30 +21,44 @@ header {
 }
 
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: gray;
-}
-
 .navbar {
-  z-index: 1000;
-}
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__menu {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav_img {
+    display: block;
+    width: 30px;
+  }
+  
+  .nav__close {
+    display: none;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff ;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    z-index: 1000;
+  }
 
 .cta-button {
     background-color: white;
@@ -59,19 +73,10 @@ nav ul li a:hover {
 /* Banner */
 #banner {
     background-color: #f0f0f0;
-    padding: 50px;
+    padding: 0px;
     text-align: center;
 }
 
-#banner h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#banner p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
 
 /* Secciones */
 section {
@@ -90,7 +95,13 @@ footer {
     text-align: center;
 }
 
+footer nav ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0;
+}
+
 footer nav ul li {
+    display: inline-block; /* Para que los elementos estén en línea */
     margin: 0 10px;
 }
 
@@ -103,6 +114,7 @@ footer nav ul li a {
     width: 30px;
     margin: 0 5px;
 }
+
 
 /*/ Carrusel /*/
 .banner-carousel {
@@ -341,4 +353,123 @@ input[type="checkbox"] {
 
 .contacto-formulario {
     flex: 1;
+}
+
+
+
+/*/ Boton Inicio */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 0%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+
+
+/*/ Responsive General/*/
+@media screen and (max-width: 992px) {
+
+  .nav__menu {
+      display: block;
+  }
+
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+}
+
+.navbar li {
+    margin: 3px; 
+}
+
+  .navbar ul.open {
+      display: flex;
+  }
+
+  .nav__menu.active .nav_img {
+      display: none;
+  }
+
+  .nav__menu.active .nav__close {
+      display: block;
+  }
+
+
+.cta-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.contacto-seccion {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+    .contacto-contenedor {
+        flex-direction: row; /* Asegura que los elementos estén en fila */
+        justify-content: space-between; /* Espacio entre los elementos */
+    }
+
+    .contacto-imagen {
+        flex: 1; /* Ocupa el espacio disponible */
+        margin-top: 0; /* Elimina el margen superior */
+    }
+
+    .contacto-formulario {
+        flex: 1; /* Ocupa el espacio disponible */
+    }   
+
+.contacto-imagen img {
+    max-width: 200%;
+    display: block;
+    border-radius: 10px;
+}
+
+#banner {
+    background-color: #f0f0f0;
+    padding: 0px;
+    text-align: center;
+}
+
+
+
+
+
 }
